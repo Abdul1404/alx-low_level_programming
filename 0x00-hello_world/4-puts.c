@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-/*
+/**
  *main - Entry point
  *
- *Return: Always 0 (Success)
+ *Description: 'Getting used to betty style'
  *
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
