@@ -1,1 +1,1 @@
-Everything has a function
+notempty
