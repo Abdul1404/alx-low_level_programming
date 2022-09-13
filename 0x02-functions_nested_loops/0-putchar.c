@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
   *Entry point - main
@@ -13,8 +12,8 @@ int main(void)
 	int a;
 
 	for (a = 0; a < 8; a++)
-		putchar(word[a]);
-	 putchar('\n');
+		_putchar(word[a]);
+	_putchar('\n');
 
 	return (0);
 }
