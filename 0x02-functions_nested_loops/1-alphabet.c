@@ -13,5 +13,5 @@ int main(void)
 	for (low = 'a'; low <= 'z'; low++)
 		_putchar(low);
 	_putchar('\n');
-	return (void);
+	return (1);
 }
