@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,12 +6,12 @@
   *Return - 0
   */
 
-void print_alphabet(void)
+int main(void)
 {
 	char low;
 
 	for (low = 'a'; low <= 'z'; low++)
 		_putchar(low);
 	_putchar('\n');
-	return (0);
+	return (void);
 }
