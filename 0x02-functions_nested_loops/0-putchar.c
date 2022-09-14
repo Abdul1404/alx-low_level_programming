@@ -8,11 +8,8 @@
   */
 int main(void)
 {
-	char word[8] = "_putchar";
-		int i;
+	const char *word = "_putchar";
 
-	for (i = 0; i <= 8; i++)
-		putchar(word[i]);
-
+	fprintf(stderr, "%c\n", *word);
 	return (0);
 }
