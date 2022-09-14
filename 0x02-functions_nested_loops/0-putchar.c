@@ -8,8 +8,6 @@
   */
 int main(void)
 {
-	const char *word = "_putchar";
-
-	fprintf(stderr, "%c\n", *word);
+	fprintf(stderr,"_putchar\n");
 	return (0);
 }
