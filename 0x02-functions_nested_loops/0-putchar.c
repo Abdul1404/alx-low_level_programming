@@ -13,6 +13,6 @@ int main(void)
 	for (i = 0; i <= 8; i++)
 		putchar(word[i]);
 
-	fprintf(stderr,"_putchar\n");
+	fprintf(stderr,"[Anything]\n");
 	return (0);
 }
