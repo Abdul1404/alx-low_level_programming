@@ -10,9 +10,10 @@ int main(void)
 {
 	char word[8] = "_putchar";
 	int i;
+
 	for (i = 0; i <= 8; i++)
 		putchar(word[i]);
 
-	fprintf(stderr,"[Anything]\n");
+	fprintf(stderr, "[Anything]");
 	return (0);
 }
