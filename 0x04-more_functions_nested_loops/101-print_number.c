@@ -8,33 +8,29 @@
 
 void print_number(int n)
 {
-	long len, res, i, temp, expo;
+	unsigned int tens, digit, positive = n;
+	double t_beg = 1;
 
-	res = n;
-	expo = len =  1;
-					/*Check negatives*/
-	if (res < 0)
+	if (n == 0)
+	_putchar('0');
+	else
 	{
-	res *= -1;
+	if (n < 0)
+	{
+	positive = n * -1;
 	_putchar('-');
 	}
 
-						/**/
-	temp = res;
-	while (temp >= 10)
-	{
-	len++;
-	temp /= 10;
-	}
+	while (t_beg <= positive)
+	t_beg *= 10;
+	tens = t_beg / 10;
 
-				/*Create Exponent*/
-	for (i = 1; i < len; i++)
-	expo *= 10;
-			/*Main */
-	while (expo > 1)
+	while (tens >= 1)
 	{
-	_putchar((res / expo) % 10 + '0');
-	expo /= 10;
+	digit = positive / tens;
+	_putchar(digit + '0');
+	positive = (positive - (tens * digit));
+	tens /= 10;
 	}
-	_putchar(res % 10 + '0');
+	}
 }
