@@ -8,10 +8,17 @@
 
 void print_number(int n)
 {
-	int n = '0';
+	unsigned int num = n;
 
-	for (; n <= '1000'; n++)
-	_putchar(n);
+	if (n < 0)
+	{
+	_putchar('-');
+	num = -num;
+	}
 
-	_putchar('\n');
+	if ((num / 10) > 0)
+	print_number(num / 10);
+
+	_putchar((num % 10) + '0');
+
 }
