@@ -1,19 +1,17 @@
-#include <unistd.h>
 #include <stdio.h>
-
+#include "main.h"
 /**
-  * main - Check description
-  * Description: It prints the word _putchar, followed by a new line.
-  * Return: 0.
+  *main - entry level
+  *Return: 0
+  *Description - This program prints _putchar fillowed by a new line
   */
+
 int main(void)
 {
-	char word[8] = "_putchar";
-	int i;
+	char *word = "_putchar\n";
+	int a;
 
-	for (i = 0; i <= 8; i++)
-		putchar(word[i]);
-
-	fprintf(stderr, "[Anything]");
+	for (a = 0; word[a] != '\0'; a++)
+		_putchar(word[a]);
 	return (0);
 }
