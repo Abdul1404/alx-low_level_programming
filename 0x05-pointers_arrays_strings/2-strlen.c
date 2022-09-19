@@ -7,9 +7,7 @@
   *Return: 0
   */
 
-int _strlen(char *s)
+int _strlen(char *str)
 {
-	char str;
-	*s = str;
-	return (_strlen(s));
+	return (_strlen(str));
 }
