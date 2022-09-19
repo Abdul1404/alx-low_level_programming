@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  *_strlen - chwvk description
+  *_strlen - check description
   *@string: input character
   *Description - This is a function tgat prints the length of a string
   *Return: 0
