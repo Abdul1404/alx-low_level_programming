@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
   *_puts - check description
@@ -13,5 +12,9 @@ void _puts(char *str)
 	int string = 0;
 
 	while (str[string] != '\0')
-		_puts(str);
+	{
+		_putchar(str[string]);
+		string++;
+	}
+	_putchar('\n');
 }
