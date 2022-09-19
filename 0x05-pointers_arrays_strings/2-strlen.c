@@ -2,12 +2,17 @@
 
 /**
   *_strlen - chwvk description
-  *@s: input character
+  *@string: input character
   *Description - This is a function tgat prints the length of a string
   *Return: 0
   */
 
-int _strlen(char *str)
+int _strlen(char *string)
 {
-	return (_strlen(str));
+	int length = 0;
+
+	while (string[length] != '\0')
+		length++;
+
+	return (length);
 }
