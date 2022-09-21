@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-  *print_numbers - display digits
+  *print_number - display digits
   *@n: input integer
   *Return: nothing
   */
 
-void print_numbers(int n)
+void print_number(int n)
 {
 	unsigned int x;
 
@@ -17,6 +17,6 @@ void print_numbers(int n)
 	x = -x;
 	}
 	if ((x / 10) > 0)
-		print_numbers(x / 10);
+		print_number(x / 10);
 					_putchar((x % 10) + '0');
 }
