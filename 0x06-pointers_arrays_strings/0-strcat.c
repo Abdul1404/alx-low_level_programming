@@ -2,12 +2,22 @@
 
 /**
   *_strcat - check description
-  *@dest: destonation
-  *@src: source
-  *Return: nothing
+  *@dest: a atring that concatenates
+  *@src: character string
+  *Return: dest
   */
 
 char *_strcat(char *dest, char *src)
 {
-	 _putchar(_strcat(src, dest));
+	int i, d;;
+
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+	for (d = 0; src[d] != '\0'; d++)
+	{
+		dest[i] = src[d];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
