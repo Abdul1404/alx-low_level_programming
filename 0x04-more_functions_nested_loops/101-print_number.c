@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
-  *print_number - display digits
-  *@n: integer
+  *print_numbers - display digits
+  *@n: input integer
   *Return: nothing
   */
 
-void print_number(int n)
+void print_numbers(int n)
 {
 	unsigned int x;
 
 	x = n;
 	if (n < 0)
 	{
-	_putchar(45);
-	x = -n;
+	_putchar('-');
+	x = -x;
 	}
-	if (x / 10)
-		print_number(x / 10);
+	if ((x / 10) > 0)
+		print_numbers(x / 10);
 					_putchar((x % 10) + '0');
 }
