@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/**
-  *main - print 98 followed by \n
-  *Return: 0
-  */
 int main(void)
 {
   int n;
