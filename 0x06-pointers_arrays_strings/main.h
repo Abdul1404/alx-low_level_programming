@@ -4,7 +4,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void print_number(int n);
 int _putchar(char c);
 char *rot13(char *str);
-char *leet(char *s);
+char *leet(char *str);
 char *cap_string(char *c);
 char *string_toupper(char *c);
 void reverse_array(int *a, int n);
