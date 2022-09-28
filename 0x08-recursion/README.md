@@ -1,1 +1,1 @@
-This directory contains;
+The file in tjis directory contains functions
