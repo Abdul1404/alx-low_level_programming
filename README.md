@@ -1,1 +1,1 @@
-This is the repo i use for all my c projects
+This directory contains all my low level programming projects
