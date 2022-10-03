@@ -20,6 +20,9 @@ char *create_array(unsigned int size, char c)
 
 	if (pointer == NULL)
 		return (NULL);
+
 	for (a = 0; a < size; a++)
-		return (pointer[a]);
+		pointer[a] = c;
+
+	return (pointer);
 }
