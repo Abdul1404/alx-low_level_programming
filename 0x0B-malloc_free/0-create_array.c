@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <main.h>
+#include "main.h"
 
 /**
   *create_array - function tgat creates an array of chars and 
