@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-  *create_array - function tgat creates an array of chars and 
+  *create_array - function that creates an array of chars and
   *initializes it with a specific char.
   *@size: integer
   *@c: character
