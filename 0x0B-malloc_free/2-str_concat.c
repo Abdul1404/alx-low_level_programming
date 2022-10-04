@@ -19,7 +19,8 @@ char *str_concat(char *s1, char *s2)
 		c++;
 	str = malloc(sizeof(char) * c);
 	if (str == NULL)
-		str = "";
+		return (NULL);
+
 	for (a = 0; s1[a]; a++)
 		str[b++] = s1[a];
 	for (a = 0; s2[a]; a++)
