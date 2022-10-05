@@ -1,3 +1,4 @@
+int wrdcnt(char *s);
 char **strtow(char *str);
 char *argstostr(int ac, char **av);
 void free_grid(int **grid, int height);
