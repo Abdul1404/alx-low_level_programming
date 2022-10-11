@@ -5,44 +5,47 @@
   *new_dog - creates a new dog
   *@name: name o_ new dog
   *@age: age of new dog
-  *owner: owner of dog
+  *@owner: owner of dog
   *
   *Return: NULL if itbfails
   */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	unsigned int a, b, c;
-	dog_t dog;
+	struct dog *doge;
+	int i, j, k;
+	char *n, *o;
 
-	if (name == NULL || owner == NULL)
+	doge = malloc(sizeof(struct dog));
+	if (doge == NULL)
 		return (NULL);
-	dog = malloc(sizeof(dog_t));
-	if (dog == NULL)
-		return (NULL);
-	for (a = 0; name[a]; a++)
+
+	for (i = 0; name[i] != '\0'; i++)
 		;
-	a++;
-	dog->name = malloc(sizeof(char) * a);
-	if (dog->name == NULL)
+	for (j = 0; owner[j] != '\0'; j++)
+		;
+
+	n = malloc(sizeof(char) * i + 1);
+	if (n == NULL)
 	{
-		free(dog);
+		free(doge);
 		return (NULL);
 	}
-	for (b = 0; b < a; b++)
-		dog->name = name[b];
-	dog->age = age;
-	for (c = 0; owner[c]; c++)
-		 ;
-	c++;
-	dog->owner = malloc(sizeof(char) * c);
-	if (dog->owner == NULL)
+	o = malloc(sizeof(char) * j + 1);
+	if (o == NULL)
 	{
-		free(dog->name);
-		free(dog);
+		free(n);
+		free(doge);
 		return (NULL);
 	}
-	for (b = 0; b < c; b++)
-		dog->owner[b] = owner[c];
-	return (dog);
-}	 
+	for (k = 0; k <= i; k++)
+		n[k] = name[k];
+	for (k = 0; k <= j; k++)
+		o[k] = owner[k];
+
+	doge->name = n;
+	doge->age = age;
+	doge->owner = o;
+
+	return (doge);
+}
