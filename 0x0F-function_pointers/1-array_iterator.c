@@ -3,7 +3,7 @@
 /**
   *array_iterator - executes a function given as parameter on
   *			each element
-  *@array - array
+  *@array: array
   *@size: suze of array
   *@action: pointer to function to execute
   *
@@ -16,6 +16,6 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	if (action && array)
 	{
 		for (a = 0; a < size; a++)
-			 action(array[a]);
+			action(array[a]);
 	}
-} 
+}
