@@ -13,5 +13,6 @@ int main(void)
 	int len = strlen(quote);
 
 	write(STDERR_FILENO, quote, len);
-	return (0);
+
+	return (1);
 }
