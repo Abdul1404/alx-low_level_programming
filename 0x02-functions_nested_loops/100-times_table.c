@@ -10,9 +10,9 @@
  */
 void print_times_table(int n)
 {
-	int i, j, result, f_digit, s_digit, t_digit;
+	int i, j, result;
 
-	if (n < 15 && n > 0)
+	if (n < 15 && n >= 0)
 	{
 		for (i = 0; i <= n; i++)
 		{
@@ -21,24 +21,19 @@ void print_times_table(int n)
 				result = i * j;
 				if (result > 9 && result < 100)
 				{
-					f_digit = result / 10 + '0';
-					s_digit = result % 10 + '0';
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar(f_digit);
-					_putchar(s_digit);
+					_putchar(result / 10 + '0');
+					_putchar(result % 10 + '0');
 				}
 				else if (result > 99)
 				{
-					f_digit = result / 100 + '0';
-					s_digit = ((result / 10) % 10) + '0';
-					t_digit = result % 10 + '0';
 					_putchar(',');
 					_putchar(' ');
-					_putchar(f_digit);
-					_putchar(s_digit);
-					_putchar(t_digit);
+					_putchar(result / 100 + '0');
+					_putchar(((result / 10) % 10) + '0');
+					_putchar(result % 10 + '0');
 				}
 				else
 				{
