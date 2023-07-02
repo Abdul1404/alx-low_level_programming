@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints \ n times
+ * print_triangle - prints \ n times
  *
  * @n: number of times to print
  *
  * Return: void
  *
  */
-void print_diagonal(int n)
+void print_triangle(int n)
 {
-	int j, k;
+	int j, k, l;
 
 	if (!(n <= 0))
 	{
@@ -18,10 +18,15 @@ void print_diagonal(int n)
 		{
 			if (n > 1)
 			{
-				for (k = 0; k < j; k++)
+				for (k = 1; k <= n - j; k++)
+				{
 					_putchar(' ');
+				}
+				for (l = 1; l <= j; l++)
+				{
+					_putchar('#');
+				}
 			}
-			_putchar('\\');
 			_putchar('\n');
 		}
 	}
