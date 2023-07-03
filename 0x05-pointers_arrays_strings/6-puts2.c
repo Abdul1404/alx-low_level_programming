@@ -12,10 +12,9 @@ void puts2(char *s)
 {
 	int i;
 
-	for (i = 0; *(s + i); i++)
+	for (i = 0; *(s + i); i += 2)
 	{
-		if (*(s + i) % 2 == 0)
-			_putchar(*(s + i));
+		_putchar(*(s + i));
 	}
 	_putchar(10);
 }

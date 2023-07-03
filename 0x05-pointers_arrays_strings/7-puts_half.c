@@ -14,7 +14,13 @@ void puts_half(char *s)
 
 	for (i = 0; *(s + i); i++)
 		;
-	i /= 2;
+	if (i % 2 == 0)
+		i /= 2;
+	else
+	{
+		i += 1;
+		i /= 2;
+	}
 	for (; *(s + i); i++)
 		_putchar(*(s + i));
 	_putchar(10);
