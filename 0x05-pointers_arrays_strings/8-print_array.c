@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * print_array - prints array
  *
  * @n: int

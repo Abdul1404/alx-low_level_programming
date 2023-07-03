@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * puts_half - prints a string, followed by a new line, to stdout.
  *
  * @s: string
